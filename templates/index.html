@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="frontpage container">
+  <table id="frontpagetable">
+    <tr>
+      <td id="headshot"><img src="{% static 'images/skywalker_luke.jpg' %}" alt=""></td>
+      <td id="summary"><h1>My Summary</h1>
+        <p>I am a technology enthusiast and finance enthusiast. I love to use Python to generate meaningful insight into investing.</p></td>
+    </tr>
+  </table>
+
+</div>
+
+<br><br>
+
+{% block research %}
+{% endblock %}
+
+{% endblock %}

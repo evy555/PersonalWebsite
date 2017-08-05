@@ -1,0 +1,12 @@
+#frontpagetable {
+  align-items: center;
+}
+
+#headshot {
+  padding: 10%;
+}
+
+#summary {
+  padding-left: 20%;
+  align-items: right;
+}
