@@ -33,7 +33,7 @@
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <ul class="nav navbar-nav navbar-right" id="navlinks">
          <li><a class='page-scroll' href="">Research</a></li>
-         <li><a class='page-scroll' href="">Resume</a></li>
+         <li><a class='page-scroll' href="{% url 'resume' %}">Resume</a></li>
          <li><a class='page-scroll' href="">Contact</a></li>
        </ul>
      </div>
@@ -47,6 +47,18 @@
 
  {% block content %}
  {% endblock %}
+
+ <a href="https://www.linkedin.com/in/joshevans-mba/"><img id="linkedin" src="{% static 'images/LinkedIn.png' %}" alt=""></a>
+ <div id="contactbottom">
+   <p>evansj556@yahoo.com | 775-722-7109</p>
+
+ </div>
+
+ <!-- General JavaScript -->
+ <script src="{% static 'js/master.js' %}"></script>
+
+ <!-- Open default tabs  -->
+ <script>document.getElementById("resumedefaultopen").click();</script>
 
   </body>
 </html>

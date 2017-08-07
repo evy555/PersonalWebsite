@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 id='resumeheader'>Resume</h1>
+<div class="container" id="resumepage">
+
+
+  <div class="tabResume">
+  <button class="tablinksresume" onclick="openTab(event, 'resumesummary', 'resume')" id="resumedefaultopen">Summary</button>
+  <button class="tablinksresume" onclick="openTab(event, 'experience', 'resume')">Experience</button>
+  <button class="tablinksresume" onclick="openTab(event, 'technicalskills', 'resume')">Skills</button>
+  <button class="tablinksresume" onclick="openTab(event, 'compentencies', 'resume')">Core Competencies</button>
+  <button class="tablinksresume" onclick="openTab(event, 'education', 'resume')">Education</button>
+  <button class="tablinksresume" onclick="openTab(event, 'hobbies', 'resume')">Hobbies</button>
+  </div>
+  <div id="resumesummary" class="tabcontentresume"><p>{% include 'resume/summary.html' %}</p></div>
+  <div id="experience" class="tabcontentresume"><p></p>{% include 'resume/experience.html' %}</div>
+  <div id="technicalskills" class="tabcontentresume"><p>{% include 'resume/skills.html' %}<p></div>
+  <div id="compentencies" class="tabcontentresume"><p>{% include 'resume/compentencies.html' %}<p></div>
+  <div id="education" class="tabcontentresume"><p>{% include 'resume/education.html' %}<p></div>
+  <div id="hobbies" class="tabcontentresume"><p>{% include 'resume/hobbies.html' %}<p></div>
+</div>
+
+{% endblock %}
